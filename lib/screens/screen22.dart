@@ -50,7 +50,15 @@ class _Screen22State extends State<Screen22> {
     for (var i = 0; i < tmp.choices.length; i++) {
       myChoices.add(RadioListTile<int>(
         title: Text(tmp.choices[i]['text']),
-        subtitle: Text('qwerrty'),
+        subtitle: tmp.choices[i].containsKey('subtext')
+            ? Text(
+                tmp.choices[i]['subtext'],
+                style: TextStyle(
+                  fontSize: 10.0,
+                  color: Colors.black38,
+                ),
+              )
+            : null,
         value: i,
         groupValue: _choice,
         onChanged: (int value) {

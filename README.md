@@ -7,7 +7,7 @@ Simple interactive decision tree.
 
 Screenshots:
 
-![Screen](/doc/toothidentapp01.jpg)
+![Screen](/doc/toothidentapp01.jpg | width=200px)
 
 ![Screen](/doc/toothidentapp02.jpg)
 

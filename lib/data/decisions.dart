@@ -983,7 +983,7 @@ final List<DecisionStep> steps = [
     choices: [],
     toothType: 'Canines',
     toothDentition: 'Deciduous',
-    toothArcade: 'Upper',
+    toothArcade: 'Lower',
     toothPosition: '',
     toothSide: 'Right',
   ),

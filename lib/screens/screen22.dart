@@ -183,40 +183,52 @@ class _DecisionState extends State<Decision> {
       padding: const EdgeInsets.all(8.0),
       child: Column(
         children: <Widget>[
-          SizedBox(
-            height: 20.0,
-          ),
-          Text(
-            widget.currentStep,
-            style: TextStyle(
-              fontSize: 22.0,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          Column(
-            children: widget.choiceList,
-          ),
-          SizedBox(height: 20.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              RaisedButton(
-                color: Colors.red,
-                child: Text(
-                  'Back',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onPressed: widget.onPressBack,
+          Expanded(
+            child: Column(children: <Widget>[
+              SizedBox(
+                height: 20.0,
               ),
-              RaisedButton(
-                color: Colors.blue,
-                child: Text(
-                  'Next',
-                  style: TextStyle(color: Colors.white),
+              Text(
+                widget.currentStep,
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
                 ),
-                onPressed: widget.onPressNext,
-              )
-            ],
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8.0),
+                child: Column(
+                  children: widget.choiceList,
+                ),
+              ),
+            ]),
+          ),
+          // wyrównanie przycisków do dołu ekranu
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  RaisedButton(
+                    color: Colors.red,
+                    child: Text(
+                      'Back',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    onPressed: widget.onPressBack,
+                  ),
+                  RaisedButton(
+                    color: Colors.blue,
+                    child: Text(
+                      'Next',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    onPressed: widget.onPressNext,
+                  )
+                ],
+              ),
+            ),
           )
         ],
       ),

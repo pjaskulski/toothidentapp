@@ -7,6 +7,7 @@ List<String> _historySteps = ['2.2'];
 
 class Screen22 extends StatefulWidget {
   static const String id = 'Screen22';
+  // constructor?
 
   @override
   _Screen22State createState() => _Screen22State();
@@ -72,57 +73,85 @@ class _Screen22State extends State<Screen22> {
     return myChoices;
   }
 
+  void _resetIdentification() {
+    _historySteps.removeRange(1, _historySteps.length);
+    _currentStep = 0;
+  }
+
+  Future<bool> _onBackPressed() {
+    return showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+              title: Text('Do you really want to interrupt indentification?'),
+              actions: <Widget>[
+                FlatButton(
+                  child: Text('No'),
+                  onPressed: () => Navigator.pop(context, false),
+                ),
+                FlatButton(
+                  child: Text('Yes'),
+                  onPressed: () {
+                    _resetIdentification();
+                    Navigator.pop(context, true);
+                  },
+                )
+              ],
+            ));
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Tooth Identification'),
-        // hide back arrow in appBar, show close button
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.close),
-            onPressed: () {
-              _historySteps.removeRange(1, _historySteps.length);
-              _currentStep = 0;
-              Navigator.of(context).pop(null);
-            },
-          )
-        ],
-        leading: new Container(),
-      ),
-      body: isQuestion(_currentStep)
-          ? Decision(
-              choice: _choice,
-              currentStep: getCurrentTitle(_currentStep),
-              choiceList: createChoiceList(_currentStep),
-              onPressBack: _currentStep > 0
-                  ? () {
-                      setState(() {
-                        _historySteps.removeLast();
-                        _currentStep = _currentStep - 1;
-                      });
-                    }
-                  : null,
-              onPressNext: () {
-                setState(() {
-                  String nextStep;
-                  nextStep = getNextStep(_currentStep, _choice);
-                  if (nextStep != '') {
-                    _historySteps.add(nextStep);
-                    _currentStep = _currentStep + 1;
-                  }
-                });
+    return WillPopScope(
+      onWillPop: _onBackPressed,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Tooth Identification'),
+          // hide back arrow in appBar, show close button
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.close),
+              onPressed: () {
+                _resetIdentification();
+                Navigator.of(context).pop(null);
               },
             )
-          : Result(
-              resultStep: getCurrentStep(_currentStep),
-              onPress: () {
-                setState(() {
-                  _historySteps.removeRange(1, _historySteps.length);
-                  _currentStep = 0;
-                });
-              },
-            ),
+          ],
+          leading: new Container(),
+        ),
+        body: isQuestion(_currentStep)
+            ? Decision(
+                choice: _choice,
+                currentStep: getCurrentTitle(_currentStep),
+                choiceList: createChoiceList(_currentStep),
+                onPressBack: _currentStep > 0
+                    ? () {
+                        setState(() {
+                          _historySteps.removeLast();
+                          _currentStep = _currentStep - 1;
+                        });
+                      }
+                    : null,
+                onPressNext: () {
+                  setState(() {
+                    String nextStep;
+                    nextStep = getNextStep(_currentStep, _choice);
+                    if (nextStep != '') {
+                      _historySteps.add(nextStep);
+                      _currentStep = _currentStep + 1;
+                    }
+                  });
+                },
+              )
+            : Result(
+                resultStep: getCurrentStep(_currentStep),
+                onPress: () {
+                  setState(() {
+                    _historySteps.removeRange(1, _historySteps.length);
+                    _currentStep = 0;
+                  });
+                },
+              ),
+      ),
     );
   }
 }

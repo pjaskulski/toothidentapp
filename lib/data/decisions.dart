@@ -23,7 +23,7 @@ final List<DecisionStep> steps = [
           'text':
               'Crown has more than one cusp (not counting lingual relief), and/or Tooth has more than one root',
           'subtext':
-              ' Complex, multi-cusped crown. Usually multiple roots (fused or separate) or nearly separated radicals.',
+              'Complex, multi-cusped crown. Usually multiple roots (fused or separate) or nearly separated radicals.',
           'nextStep': '2.5'
         },
       ]),

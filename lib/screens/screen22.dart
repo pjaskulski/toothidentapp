@@ -4,6 +4,7 @@ import 'package:toothidentapp/models/decisionstep.dart';
 
 int _currentStep = 0;
 List<String> _historySteps = ['2.2'];
+List<int> _historyChoices = [0];
 
 class Screen22 extends StatefulWidget {
   static const String id = 'Screen22';
@@ -65,6 +66,7 @@ class _Screen22State extends State<Screen22> {
         onChanged: (int value) {
           setState(() {
             _choice = value;
+            _historyChoices[_currentStep] = _choice;
           });
         },
       ));
@@ -75,6 +77,8 @@ class _Screen22State extends State<Screen22> {
 
   void _resetIdentification() {
     _historySteps.removeRange(1, _historySteps.length);
+    _historyChoices.removeRange(1, _historyChoices.length);
+    _historyChoices[0] = 0;
     _currentStep = 0;
   }
 
@@ -120,14 +124,16 @@ class _Screen22State extends State<Screen22> {
         ),
         body: isQuestion(_currentStep)
             ? Decision(
-                choice: _choice,
+                choice: _historyChoices[_currentStep],
                 currentStep: getCurrentTitle(_currentStep),
                 choiceList: createChoiceList(_currentStep),
                 onPressBack: _currentStep > 0
                     ? () {
                         setState(() {
                           _historySteps.removeLast();
+                          _historyChoices.removeLast();
                           _currentStep = _currentStep - 1;
+                          _choice = _historyChoices[_currentStep];
                         });
                       }
                     : null,
@@ -137,7 +143,9 @@ class _Screen22State extends State<Screen22> {
                     nextStep = getNextStep(_currentStep, _choice);
                     if (nextStep != '') {
                       _historySteps.add(nextStep);
+                      _historyChoices.add(0);
                       _currentStep = _currentStep + 1;
+                      _choice = 0;
                     }
                   });
                 },
@@ -147,6 +155,7 @@ class _Screen22State extends State<Screen22> {
                 onPress: () {
                   setState(() {
                     _historySteps.removeRange(1, _historySteps.length);
+                    _historyChoices.removeRange(1, _historyChoices.length);
                     _currentStep = 0;
                   });
                 },

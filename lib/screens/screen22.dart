@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toothidentapp/data/decisions.dart';
 import 'package:toothidentapp/models/decisionstep.dart';
+import 'package:toothidentapp/constans.dart';
 
 int _currentStep = 0;
 List<String> _historySteps = ['2.2'];
@@ -260,70 +261,88 @@ class Result extends StatefulWidget {
 class _ResultState extends State<Result> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      // if Result
-      padding: EdgeInsets.all(8.0),
-      margin: EdgeInsets.all(16.0),
-      decoration: BoxDecoration(
-        color: Colors.blue.withOpacity(0.25),
-        border: Border.all(),
-        borderRadius: BorderRadius.circular(4.0),
-      ),
-      child: Column(children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Text(
-            widget.resultStep.title,
-            style: TextStyle(
-              fontSize: 22.0,
-              fontWeight: FontWeight.bold,
+    return Column(
+      children: <Widget>[
+        Expanded(
+          child: SingleChildScrollView(
+            child: Container(
+              padding: EdgeInsets.all(8.0),
+              margin: EdgeInsets.all(16.0),
+              decoration: BoxDecoration(
+                color: Colors.blue.withOpacity(0.25),
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(4.0),
+              ),
+              child: Column(children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: Text(
+                    widget.resultStep.title,
+                    style: TextStyle(
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                DataTable(columns: [
+                  DataColumn(label: Text('', style: kDataColumnStyle)),
+                  DataColumn(label: Text('', style: kDataColumnStyle)),
+                ], rows: [
+                  DataRow(cells: [
+                    DataCell(Text('Type:', style: kDataCellStyle)),
+                    DataCell(Text(widget.resultStep.toothType,
+                        style: kDataCellStyle)),
+                  ]),
+                  DataRow(cells: [
+                    DataCell(Text('Dentition:', style: kDataCellStyle)),
+                    DataCell(Text(widget.resultStep.toothDentition,
+                        style: kDataCellStyle)),
+                  ]),
+                  DataRow(cells: [
+                    DataCell(Text('Arcade:', style: kDataCellStyle)),
+                    DataCell(Text(widget.resultStep.toothArcade,
+                        style: kDataCellStyle)),
+                  ]),
+                  DataRow(cells: [
+                    DataCell(Text('Position:', style: kDataCellStyle)),
+                    DataCell(Text(widget.resultStep.toothPosition,
+                        style: kDataCellStyle)),
+                  ]),
+                  DataRow(cells: [
+                    DataCell(Text('Side:', style: kDataCellStyle)),
+                    DataCell(Text(widget.resultStep.toothSide,
+                        style: kDataCellStyle)),
+                  ]),
+                ]),
+                SizedBox(
+                  height: 25.0,
+                )
+              ]),
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.all(30.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                'Type: ' + widget.resultStep.toothType,
-                style: TextStyle(fontSize: 18.0),
-                textAlign: TextAlign.start,
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  RaisedButton(
+                    color: Colors.blue,
+                    child: Text(
+                      'Reset',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    onPressed: widget.onPress,
+                  ),
+                ],
               ),
-              Text(
-                'Dentition: ' + widget.resultStep.toothDentition,
-                style: TextStyle(fontSize: 18.0),
-              ),
-              Text(
-                'Arcade: ' + widget.resultStep.toothArcade,
-                style: TextStyle(fontSize: 18.0),
-              ),
-              Text(
-                'Position: ' + widget.resultStep.toothPosition,
-                style: TextStyle(fontSize: 18.0),
-              ),
-              Text(
-                'Side: ' + widget.resultStep.toothSide,
-                style: TextStyle(fontSize: 18.0),
-              )
-            ],
-          ),
-        ),
-        SizedBox(height: 20.0),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            RaisedButton(
-              color: Colors.blue,
-              child: Text(
-                'Reset',
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: widget.onPress,
             ),
-          ],
+          ),
         )
-      ]),
+      ],
     );
   }
 }

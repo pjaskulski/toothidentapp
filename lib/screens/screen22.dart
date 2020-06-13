@@ -193,24 +193,26 @@ class _DecisionState extends State<Decision> {
       child: Column(
         children: <Widget>[
           Expanded(
-            child: Column(children: <Widget>[
-              SizedBox(
-                height: 20.0,
-              ),
-              Text(
-                widget.currentStep,
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
+            child: SingleChildScrollView(
+              child: Column(children: <Widget>[
+                SizedBox(
+                  height: 20.0,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8.0),
-                child: Column(
-                  children: widget.choiceList,
+                Text(
+                  widget.currentStep,
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-            ]),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: Column(
+                    children: widget.choiceList,
+                  ),
+                ),
+              ]),
+            ),
           ),
           // wyrównanie przycisków do dołu ekranu
           Align(

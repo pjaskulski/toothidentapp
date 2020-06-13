@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toothidentapp/data/decisions.dart';
 import 'package:toothidentapp/models/decisionstep.dart';
 import 'package:toothidentapp/constans.dart';
+import 'package:toothidentapp/tools/tools.dart';
 
 int _currentStep = 0;
 List<String> _historySteps = ['2.2'];
@@ -121,7 +122,12 @@ class _Screen22State extends State<Screen22> {
               },
             )
           ],
-          leading: new Container(),
+          leading: IconButton(
+            icon: Icon(Icons.info),
+            onPressed: () {
+              showAppAbout(context);
+            },
+          ),
         ),
         body: isQuestion(_currentStep)
             ? Decision(

@@ -7,7 +7,7 @@ Application based on methodology described in: "Human Osteology" (Tim D. White, 
 > "Learning to identify isolated teeth is difficult.
 > In order to learn these visual patterns,
 > the beginning osteologist must learn to make a series of
-> observations and judgments about the morphology of the tooth ' +
+> observations and judgments about the morphology of the tooth
 > to be identified."
 
 (White, Black, Folkens, 2011, p. 563)

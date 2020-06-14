@@ -1,9 +1,16 @@
 # Tooth Identification App
 
-Flutter project. 
+Flutter project. Simple interactive decision tree.
 
 Application based on methodology described in: "Human Osteology" (Tim D. White, Michael T. Black, Pieter A. Folkens, Academic Press 2011).
-Simple interactive decision tree.
+
+> "Learning to identify isolated teeth is difficult.
+> In order to learn these visual patterns,
+> the beginning osteologist must learn to make a series of
+> observations and judgments about the morphology of the tooth ' +
+> to be identified."
+
+(White, Black, Folkens, 2011, p. 563)
 
 Screenshots:
 

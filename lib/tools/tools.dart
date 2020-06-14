@@ -11,5 +11,6 @@ void showAppAbout(BuildContext context) {
         Text(
             'Application based on methodology described in: "Human Osteology" (Tim D. White, Michael T. Black, Pieter A. Folkens, Academic Press 2011).'),
         Text('Simple interactive decision tree.'),
+        Text('https://github.com/pjaskulski/toothidentapp'),
       ]);
 }

@@ -63,11 +63,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      '"Learning to identify isolated teeth is difficult. ' +
-                          'In order to learn these visual patterns, ' +
-                          'the beginning osteologist must learn to make a series of ' +
-                          'observations and judgments about the morphology of the tooth ' +
-                          'to be identified."',
+                      '"Learning to identify isolated teeth is difficult. '
+                      'In order to learn these visual patterns, '
+                      'the beginning osteologist must learn to make a series of '
+                      'observations and judgments about the morphology of the tooth '
+                      'to be identified."',
                       style: TextStyle(fontSize: 15.0),
                     ),
                     SizedBox(height: 8.0),

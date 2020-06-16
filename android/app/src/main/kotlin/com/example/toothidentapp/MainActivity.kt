@@ -1,4 +1,4 @@
-package com.example.toothidentapp
+package net.piotrjaskulski.toothidentapp
 
 import io.flutter.embedding.android.FlutterActivity
 

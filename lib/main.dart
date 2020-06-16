@@ -10,7 +10,8 @@ class ToothApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tooth Identification App',
+      showSemanticsDebugger: true,
+      title: 'Tooth Identification',
       home: MyHomePage(title: 'Tooth Identification'),
       initialRoute: MyHomePage.id,
       routes: {

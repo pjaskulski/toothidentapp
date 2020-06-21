@@ -331,10 +331,17 @@ class _ResultState extends State<Result> {
               padding: EdgeInsets.all(8.0),
               margin: EdgeInsets.all(16.0),
               decoration: BoxDecoration(
-                color: Colors.blue.withOpacity(0.25),
-                border: Border.all(),
-                borderRadius: BorderRadius.circular(4.0),
-              ),
+                  color: Colors.blue.withOpacity(0.25),
+                  border: Border.all(),
+                  borderRadius: BorderRadius.circular(4.0),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 3,
+                      blurRadius: 5,
+                      offset: Offset(0, 3), // changes position of shadow
+                    ),
+                  ]),
               child: Column(children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),

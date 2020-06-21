@@ -3,6 +3,7 @@ import 'package:toothidentapp/data/decisions.dart';
 import 'package:toothidentapp/models/decisionstep.dart';
 import 'package:toothidentapp/constans.dart';
 import 'package:toothidentapp/tools/tools.dart';
+import 'package:toothidentapp/widgets/currsteptext.dart';
 
 int _currentStep = 0;
 List<String> _historySteps = ['2.2'];
@@ -23,6 +24,24 @@ class _Screen22State extends State<Screen22> {
     String id = _historySteps[index];
     var tmp = steps.firstWhere((i) => i.id == id);
     return tmp.title;
+  }
+
+  String getCurrentStepName(int index) {
+    String id = _historySteps[index];
+    var tmp = steps.firstWhere((i) => i.id == id);
+    return tmp.stepName;
+  }
+
+  int getCurrentStepNum(int index) {
+    String id = _historySteps[index];
+    var tmp = steps.firstWhere((i) => i.id == id);
+    return tmp.stepNum;
+  }
+
+  int getCurrentStepMax(int index) {
+    String id = _historySteps[index];
+    var tmp = steps.firstWhere((i) => i.id == id);
+    return tmp.stepMax;
   }
 
   DecisionStep getCurrentStep(int index) {
@@ -53,12 +72,15 @@ class _Screen22State extends State<Screen22> {
     var tmp = steps.firstWhere((i) => i.id == id);
     for (var i = 0; i < tmp.choices.length; i++) {
       myChoices.add(RadioListTile<int>(
-        title: Text(tmp.choices[i]['text']),
+        title: Text(
+          tmp.choices[i]['text'],
+          style: TextStyle(fontSize: 15.0),
+        ),
         subtitle: tmp.choices[i].containsKey('subtext')
             ? Text(
                 tmp.choices[i]['subtext'],
                 style: TextStyle(
-                  fontSize: 10.0,
+                  fontSize: 11.0,
                   color: Colors.black38,
                 ),
               )
@@ -133,6 +155,9 @@ class _Screen22State extends State<Screen22> {
             ? Decision(
                 choice: _historyChoices[_currentStep],
                 currentStep: getCurrentTitle(_currentStep),
+                stepName: getCurrentStepName(_currentStep),
+                stepNum: getCurrentStepNum(_currentStep),
+                stepMax: getCurrentStepMax(_currentStep),
                 choiceList: createChoiceList(_currentStep),
                 onPressBack: _currentStep > 0
                     ? () {
@@ -177,6 +202,9 @@ class Decision extends StatefulWidget {
     Key key,
     this.choice,
     this.currentStep,
+    this.stepName,
+    this.stepNum,
+    this.stepMax,
     this.choiceList,
     this.onPressBack,
     this.onPressNext,
@@ -184,6 +212,9 @@ class Decision extends StatefulWidget {
 
   final int choice;
   final String currentStep;
+  final String stepName;
+  final int stepNum;
+  final int stepMax;
   final List<Widget> choiceList;
   final Function onPressBack;
   final Function onPressNext;
@@ -202,20 +233,45 @@ class _DecisionState extends State<Decision> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(children: <Widget>[
-                SizedBox(
-                  height: 20.0,
-                ),
-                Text(
-                  widget.currentStep,
-                  style: TextStyle(
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
-                  ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: CurrStepText(
+                      stepName: widget.stepName,
+                      stepNum: widget.stepNum,
+                      stepMax: widget.stepMax),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8.0),
-                  child: Column(
-                    children: widget.choiceList,
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 2.0, vertical: 8.0),
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey[50],
+                      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 3,
+                          blurRadius: 5,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
+                      ],
+                    ),
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          widget.currentStep,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Column(
+                          children: widget.choiceList,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ]),

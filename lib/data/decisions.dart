@@ -102,7 +102,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: '2.6I',
     type: 'question',
-    title: 'Permament or deciduous?',
+    title: 'Permanent or deciduous?',
     stepName: 'Dentition',
     stepNum: 3,
     stepMax: 6,
@@ -173,7 +173,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: '2.6C',
     type: 'question',
-    title: 'Permament or deciduous?',
+    title: 'Permanent or deciduous?',
     stepName: 'Dentition',
     stepNum: 4,
     stepMax: 6,
@@ -592,7 +592,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: '2.6M',
     type: 'question',
-    title: 'Permament or deciduous?',
+    title: 'Permanent or deciduous?',
     stepName: 'Dentition',
     stepNum: 3,
     stepMax: 6,
@@ -878,7 +878,7 @@ final List<DecisionStep> steps = [
   ),
 
   // RESULTS
-  // Incisors permament upper
+  // Incisors Permanent upper
   DecisionStep(
     id: 'RI1-U',
     type: 'result',
@@ -888,7 +888,7 @@ final List<DecisionStep> steps = [
     stepMax: 0,
     choices: [],
     toothType: 'Incisors',
-    toothDentition: 'Permament',
+    toothDentition: 'Permanent',
     toothArcade: 'Upper',
     toothPosition: '1',
     toothSide: 'Right',
@@ -902,7 +902,7 @@ final List<DecisionStep> steps = [
     stepMax: 0,
     choices: [],
     toothType: 'Incisors',
-    toothDentition: 'Permament',
+    toothDentition: 'Permanent',
     toothArcade: 'Upper',
     toothPosition: '1',
     toothSide: 'Left',
@@ -916,7 +916,7 @@ final List<DecisionStep> steps = [
     stepMax: 0,
     choices: [],
     toothType: 'Incisors',
-    toothDentition: 'Permament',
+    toothDentition: 'Permanent',
     toothArcade: 'Upper',
     toothPosition: '2',
     toothSide: 'Right',
@@ -930,12 +930,12 @@ final List<DecisionStep> steps = [
     stepMax: 0,
     choices: [],
     toothType: 'Incisors',
-    toothDentition: 'Permament',
+    toothDentition: 'Permanent',
     toothArcade: 'Upper',
     toothPosition: '2',
     toothSide: 'Left',
   ),
-  // inicors permament lower
+  // inicors Permanent lower
   DecisionStep(
     id: 'RI1-L',
     type: 'result',
@@ -945,7 +945,7 @@ final List<DecisionStep> steps = [
     stepMax: 0,
     choices: [],
     toothType: 'Incisors',
-    toothDentition: 'Permament',
+    toothDentition: 'Permanent',
     toothArcade: 'Lower',
     toothPosition: '1',
     toothSide: 'Right',
@@ -959,7 +959,7 @@ final List<DecisionStep> steps = [
     stepMax: 0,
     choices: [],
     toothType: 'Incisors',
-    toothDentition: 'Permament',
+    toothDentition: 'Permanent',
     toothArcade: 'Lower',
     toothPosition: '1',
     toothSide: 'Left',
@@ -973,7 +973,7 @@ final List<DecisionStep> steps = [
     stepMax: 0,
     choices: [],
     toothType: 'Incisors',
-    toothDentition: 'Permament',
+    toothDentition: 'Permanent',
     toothArcade: 'Lower',
     toothPosition: '2',
     toothSide: 'Right',
@@ -987,7 +987,7 @@ final List<DecisionStep> steps = [
     stepMax: 0,
     choices: [],
     toothType: 'Incisors',
-    toothDentition: 'Permament',
+    toothDentition: 'Permanent',
     toothArcade: 'Lower',
     toothPosition: '2',
     toothSide: 'Left',
@@ -1106,7 +1106,7 @@ final List<DecisionStep> steps = [
     toothPosition: '2',
     toothSide: 'Left',
   ),
-  // Canines permament
+  // Canines Permanent
   DecisionStep(
     id: 'RC1-U',
     type: 'result',

@@ -996,7 +996,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'RDI1-U',
     type: 'result',
-    title: 'rdi1 (upper)',
+    title: 'Rdi1 (upper)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1010,7 +1010,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'LDI1-U',
     type: 'result',
-    title: 'ldi1 (upper)',
+    title: 'Ldi1 (upper)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1024,7 +1024,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'RDI2-U',
     type: 'result',
-    title: 'rdi2 (upper)',
+    title: 'Rdi2 (upper)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1038,7 +1038,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'LDI2-U',
     type: 'result',
-    title: 'ldi2 (upper)',
+    title: 'Ldi2 (upper)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1053,7 +1053,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'RDI1-L',
     type: 'result',
-    title: 'rdi1 (lower)',
+    title: 'Rdi1 (lower)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1067,7 +1067,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'LDI1-L',
     type: 'result',
-    title: 'ldi1 (lower)',
+    title: 'Ldi1 (lower)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1081,7 +1081,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'RDI2-L',
     type: 'result',
-    title: 'rdi2 (lower)',
+    title: 'Rdi2 (lower)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1095,7 +1095,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'LDI2-L',
     type: 'result',
-    title: 'ldi2 (lower)',
+    title: 'Ldi2 (lower)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1508,7 +1508,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'RDM1-U',
     type: 'result',
-    title: 'rdm1 (upper)',
+    title: 'Rdm1 (upper)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1522,7 +1522,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'LDM1-U',
     type: 'result',
-    title: 'ldm1 (upper)',
+    title: 'Ldm1 (upper)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1536,7 +1536,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'RDM2-U',
     type: 'result',
-    title: 'rdm2 (upper)',
+    title: 'Rdm2 (upper)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1550,7 +1550,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'LDM2-U',
     type: 'result',
-    title: 'ldm2 (upper)',
+    title: 'Ldm2 (upper)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1565,7 +1565,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'RDM1-L',
     type: 'result',
-    title: 'rdm1 (lower)',
+    title: 'Rdm1 (lower)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1579,7 +1579,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'LDM1-L',
     type: 'result',
-    title: 'ldm1 (lower)',
+    title: 'Ldm1 (lower)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1593,7 +1593,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'RDM2-L',
     type: 'result',
-    title: 'rdm2 (lower)',
+    title: 'Rdm2 (lower)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,
@@ -1607,7 +1607,7 @@ final List<DecisionStep> steps = [
   DecisionStep(
     id: 'LDM2-L',
     type: 'result',
-    title: 'ldm2 (lower)',
+    title: 'Ldm2 (lower)',
     stepName: '',
     stepNum: 0,
     stepMax: 0,

@@ -84,8 +84,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       flex: 1,
                       child: RaisedButton(
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0),
-                            side: BorderSide(color: Colors.red)),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
                         child: Text(
                           'Start',
                           style: TextStyle(

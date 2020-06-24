@@ -287,8 +287,8 @@ class _DecisionState extends State<Decision> {
                   RaisedButton(
                     color: Colors.red,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                        side: BorderSide(color: Colors.red)),
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                     child: Text(
                       'Back',
                       style: TextStyle(color: Colors.white),
@@ -298,8 +298,8 @@ class _DecisionState extends State<Decision> {
                   RaisedButton(
                     color: Colors.blue,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                        side: BorderSide(color: Colors.red)),
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                     child: Text(
                       'Next',
                       style: TextStyle(color: Colors.white),
@@ -339,7 +339,7 @@ class _ResultState extends State<Result> {
               decoration: BoxDecoration(
                   color: Colors.blue.withOpacity(0.25),
                   border: Border.all(),
-                  borderRadius: BorderRadius.circular(4.0),
+                  borderRadius: BorderRadius.circular(10.0),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.withOpacity(0.5),
@@ -407,8 +407,8 @@ class _ResultState extends State<Result> {
                   RaisedButton(
                     color: Colors.blue,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                        side: BorderSide(color: Colors.red)),
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                     child: Text(
                       'Reset',
                       style: TextStyle(color: Colors.white),

@@ -286,6 +286,9 @@ class _DecisionState extends State<Decision> {
                 children: <Widget>[
                   RaisedButton(
                     color: Colors.red,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.red)),
                     child: Text(
                       'Back',
                       style: TextStyle(color: Colors.white),
@@ -294,6 +297,9 @@ class _DecisionState extends State<Decision> {
                   ),
                   RaisedButton(
                     color: Colors.blue,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.red)),
                     child: Text(
                       'Next',
                       style: TextStyle(color: Colors.white),
@@ -400,6 +406,9 @@ class _ResultState extends State<Result> {
                 children: <Widget>[
                   RaisedButton(
                     color: Colors.blue,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.red)),
                     child: Text(
                       'Reset',
                       style: TextStyle(color: Colors.white),

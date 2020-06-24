@@ -14,20 +14,22 @@ final List<DecisionStep> steps = [
           'text':
               'Crown has a bladed edge, and/or Unworn occlusal surface is bumpy (has mamelons)',
           'subtext':
-              'Blade- or shovel-like crown. Dentin exposure is linear or barbell-shaped. Single, simple root. ',
+              'Blade- or shovel-like crown ⬥ Dentin exposure is linear or barbell-shaped ⬥ Single, simple root',
           'nextStep': '2.3'
         },
         {
           'text': 'Not immediately clear',
           'subtext':
-              'Pointed crown. Dentin exposure is diamond-shaped or widest in middle. Single, simple root. Root is long and large',
+              'Pointed crown ⬥ Dentin exposure is diamond-shaped or widest in middle ⬥ Single, simple '
+                  'root ⬥ Root is long and large',
           'nextStep': '2.4',
         },
         {
           'text':
               'Crown has more than one cusp (not counting lingual relief), and/or Tooth has more than one root',
           'subtext':
-              'Complex, multi-cusped crown. Usually multiple roots (fused or separate) or nearly separated radicals.',
+              'Complex, multi-cusped crown ⬥ Usually multiple roots (fused or separate) or nearly separated '
+                  'radicals',
           'nextStep': '2.5'
         },
       ]),
@@ -42,16 +44,21 @@ final List<DecisionStep> steps = [
     choices: [
       {
         'text':
-            'Crown has a shovel shape. If worn, there is greater dentin exposure at edges than in center, yielding a \'barbell\' appearance.',
+            'Crown has a shovel shape. If worn, there is greater dentin exposure at edges than in center, '
+                'yielding a \'barbell\' appearance.',
         'subtext':
-            'Tooth is spatulate. Blade-like (or bumpy) unworn occlusal margin. Buttressing is heaviest at edges of crown. Dentin exposure greater at edge(s). Both crown and root are shorter than in canines',
+            'Tooth is spatulate ⬥ Blade-like (or bumpy) unworn occlusal margin ⬥ Buttressing is heaviest '
+                'at edges of crown ⬥ Dentin exposure greater at edge(s) ⬥ Both crown and root are shorter '
+                'than in canines',
         'nextStep': '2.6I'
       },
       {
         'text':
-            'Crown has an apex or cusp. If worn, there is greater dentin exposure in a central area than elsewhere on occlusal margin.',
+            'Crown has an apex or cusp. If worn, there is greater dentin exposure in a central area than '
+                'elsewhere on occlusal margin.',
         'subtext':
-            'Tooth is peg-like. Pointed unworn occlusal margin. Buttressing is heaviest near M/D center of crown. Dentin exposure greater at center. Both crown and root are longer than in incisors.',
+            'Tooth is peg-like ⬥ Pointed unworn occlusal margin ⬥ Buttressing is heaviest near M/D center '
+                'of crown ⬥ Dentin exposure greater at center ⬥ Both crown and root are longer than in incisors',
         'nextStep': '2.4'
       },
     ],
@@ -68,14 +75,16 @@ final List<DecisionStep> steps = [
       {
         'text': 'Has a single large cusp (lingual relief is OK)',
         'subtext':
-            ' Crown is round in cross section. Crown is relatively tall. Has only one cusp.',
+            'Crown is round in cross section ⬥ Crown is relatively tall ⬥ Has only one cusp',
         'nextStep': '2.6C'
       },
       {
         'text':
-            'Bifurcated or bilobate root or Has two sub-equal cusps or Has a median groove or Has clear mesial & distal foveae or Has a curved, cupped IPCF',
+            'Bifurcated or bilobate root or Has two sub-equal cusps or Has a median groove or Has '
+                'clear mesial & distal foveae or Has a curved, cupped IPCF',
         'subtext':
-            'Crown may be round, pinched, or triangular. Crown is relatively short. Has at least two cusps. Has a median groove or mesial & distal foveae.',
+            'Crown may be round, pinched, or triangular ⬥ Crown is relatively short ⬥ Has at least '
+                'two cusps ⬥ Has a median groove or mesial & distal foveae',
         'nextStep': '2.9'
       },
     ],
@@ -92,13 +101,15 @@ final List<DecisionStep> steps = [
       {
         'text': 'Tooth has a single, unfused root',
         'subtext':
-            ' Crown is smaller than those of molars. Usually has 2 cusps. Occlusal outline is round or oval. Can have bifurcated roots',
+            'Crown is smaller than those of molars ⬥ Usually has 2 cusps ⬥ Occlusal outline is round or '
+                'oval ⬥ Can have bifurcated roots',
         'nextStep': '2.9',
       },
       {
         'text': 'Tooth has three or more roots',
         'subtext':
-            'Crown is larger than those of premolars. Usually has 3–5 cusps. Occlusal outline is rectilinear. Usually has 2 or more roots.',
+            'Crown is larger than those of premolars ⬥ Usually has 3–5 cusps ⬥ Occlusal outline is '
+                'rectilinear ⬥ Usually has 2 or more roots',
         'nextStep': '2.6M',
       },
     ],
@@ -116,13 +127,15 @@ final List<DecisionStep> steps = [
         'text':
             'Co-occurence of partially resorbed roots and crown with evidence of wear (both must be present)',
         'subtext':
-            ' Enamel is thinner, softer, and darker. Crown is more bulbous; enamel bulges past CEJ. Roots are thinner and shorter. Multiple roots are more divergent',
+            'Enamel is thinner, softer, and darker ⬥ Crown is more bulbous; enamel bulges past CEJ ⬥ Roots '
+                'are thinner and shorter ⬥ Multiple roots are more divergent',
         'nextStep': '2.7D'
       },
       {
         'text': 'Not immediately clear',
         'subtext':
-            'Enamel is thicker, harder, and whiter. Crown is more vertical; bulges less. Roots are longer and stouter. Multiple roots diverge less',
+            'Enamel is thicker, harder, and whiter ⬥ Crown is more vertical; bulges less ⬥ Roots are longer '
+                'and stouter ⬥ Multiple roots diverge less',
         'nextStep': '2.7P',
       },
     ],
@@ -140,14 +153,16 @@ final List<DecisionStep> steps = [
         'text':
             'Root is nearly circular in cross-section (it rolls easily between your fingertips)',
         'subtext':
-            'Crown is broad relative to its height. Often has much lingual relief. Apical wear facet is inclined lingually',
+            'Crown is broad relative to its height ⬥ Often has much lingual relief ⬥ Apical wear facet is '
+                'inclined lingually',
         'nextStep': '2.11U'
       },
       {
         'text':
             'Root is round but flattened (it does not roll easily between your fingertips)',
         'subtext':
-            'Crown is narrow relative to its height. Has little or no lingual relief. Apical wear facet is inclined labially',
+            'Crown is narrow relative to its height ⬥ Has little or no lingual relief ⬥ Apical wear facet '
+                'is inclined labially',
         'nextStep': '2.11L'
       },
     ],
@@ -165,14 +180,16 @@ final List<DecisionStep> steps = [
         'text':
             'Root is nearly circular in cross-section (it rolls easily between your fingertips)',
         'subtext':
-            'Crown is broad relative to its height. Often has much lingual relief. Apical wear facet is inclined lingually',
+            'Crown is broad relative to its height ⬥ Often has much lingual relief ⬥ Apical wear facet is '
+                'inclined lingually',
         'nextStep': '2.11DU'
       },
       {
         'text':
             'Root is round but flattened (it does not roll easily between your fingertips)',
         'subtext':
-            'Crown is narrow relative to its height. Has little or no lingual relief. Apical wear facet is inclined labially',
+            'Crown is narrow relative to its height ⬥ Has little or no lingual relief ⬥ Apical wear '
+                'facet is inclined labially',
         'nextStep': '2.11DL'
       },
     ],
@@ -190,13 +207,15 @@ final List<DecisionStep> steps = [
         'text':
             'Co-occurence of partially resorbed roots and crown with evidence of wear (both must be present)',
         'subtext':
-            ' Enamel is thinner, softer, and darker. Crown is more bulbous; enamel bulges past CEJ. Roots are thinner and shorter. Multiple roots are more divergent',
+            ' Enamel is thinner, softer, and darker ⬥ Crown is more bulbous; enamel bulges past CEJ ⬥ Roots '
+                'are thinner and shorter. Multiple roots are more divergent',
         'nextStep': '2.8P'
       },
       {
         'text': 'Not immediately clear',
         'subtext':
-            'Enamel is thicker, harder, and whiter. Crown is more vertical; bulges less. Roots are longer and stouter. Multiple roots diverge less',
+            'Enamel is thicker, harder, and whiter ⬥ Crown is more vertical; bulges less ⬥ Roots are '
+                'longer and stouter ⬥ Multiple roots diverge less',
         'nextStep': '2.8D',
       },
     ],
@@ -213,14 +232,16 @@ final List<DecisionStep> steps = [
       {
         'text': 'Crown bulges beyond both mesial and distal root margins',
         'subtext':
-            'Crown is broad relative to its height. Often has much lingual relief. Apical wear facet is inclined lingually',
+            'Crown is broad relative to its height ⬥ Often has much lingual relief ⬥ Apical wear facet '
+                'is inclined lingually',
         'nextStep': '2.11CPU'
       },
       {
         'text':
             'Crown bulges beyond only distal root margin; does not bulge past mesial root margin',
         'subtext':
-            'Crown is narrow relative to its height. Has little or no lingual relief. Apical wear facet is inclined labially',
+            'Crown is narrow relative to its height ⬥ Has little or no lingual relief ⬥ Apical wear '
+                'facet is inclined labially',
         'nextStep': '2.11CPL'
       },
     ],
@@ -237,14 +258,16 @@ final List<DecisionStep> steps = [
       {
         'text': 'Crown bulges beyond both mesial and distal root margins',
         'subtext':
-            'Crown is broad relative to its height. Often has much lingual relief. Apical wear facet is inclined lingually',
+            'Crown is broad relative to its height ⬥ Often has much lingual relief ⬥ Apical wear '
+                'facet is inclined lingually',
         'nextStep': '2.11CDU'
       },
       {
         'text':
             'Crown bulges beyond only distal root margin; does not bulge past mesial root margin',
         'subtext':
-            'Crown is narrow relative to its height. Has little or no lingual relief. Apical wear facet is inclined labially',
+            'Crown is narrow relative to its height ⬥ Has little or no lingual relief ⬥ Apical wear '
+                'facet is inclined labially',
         'nextStep': '2.11CDL'
       },
     ],
@@ -260,16 +283,21 @@ final List<DecisionStep> steps = [
     choices: [
       {
         'text':
-            'Crown is more rectangular than circular, and the two main cusps are similar in terms of height and area.',
+            'Crown is more rectangular than circular, and the two main cusps are similar in terms of height '
+                'and area.',
         'subtext':
-            'Pronounced, linear median occlusal groove. Cusps are nearly equal in occlusal area. Radicals frequently split into two roots or grooved on both sides of root',
+            'Pronounced, linear median occlusal groove ⬥ Cusps are nearly equal in occlusal area ⬥ Radicals '
+                'frequently split into two roots or grooved on both sides of root',
         'nextStep': '2.12U',
       },
       {
         'text':
-            'Crown is more circular than rectangular, and the two main cusps are very dissimilar in terms of cusp area and cusp height.',
+            'Crown is more circular than rectangular, and the two main cusps are very dissimilar in '
+                'terms of cusp area and cusp height.',
         'subtext':
-            'Weak median groove (often seen as two fovea interrupted by a median occlusal ridge. The main (buccal) cusp is much larger than the smaller (lingual) cusp. Usually single rooted or grooved on only one side of root.',
+            'Weak median groove (often seen as two fovea interrupted by a median occlusal ridge ⬥ The '
+                'main (buccal) cusp is much larger than the smaller (lingual) cusp ⬥ Usually single rooted '
+                'or grooved on only one side of root',
         'nextStep': '2.12L',
       },
     ],
@@ -286,13 +314,15 @@ final List<DecisionStep> steps = [
       {
         'text': 'Large, wide, spatulate crown',
         'subtext':
-            'Crown is wide relative to its height (labially). Crown is more symmetrical (labially). Root is shorter and stouter. Has a large, rectangular IPCF',
+            'Crown is wide relative to its height (labially) ⬥ Crown is more symmetrical (labially) ⬥ Root '
+                'is shorter and stouter ⬥ Has a large, rectangular IPCF',
         'nextStep': '2.11U-1',
       },
       {
         'text': 'Not immediately clear',
         'subtext':
-            ' Crown is tall relative to its width (labially). Crown is more asymmetrical (labially). Root is longer and more slender. Has a square, concave IPCF',
+            'Crown is tall relative to its width (labially) ⬥ Crown is more asymmetrical (labially) ⬥ Root '
+                'is longer and more slender ⬥ Has a square, concave IPCF',
         'nextStep': '2.11U-2',
       },
     ],
@@ -335,14 +365,17 @@ final List<DecisionStep> steps = [
       {
         'text': 'Not immediately clear',
         'subtext':
-            'Crown is slightly smaller than lateral. Crown is tall relative to width (labially). Crown is more symmetrical (labially). Crown edges are equally angular. Root is shorter than lateral',
+            'Crown is slightly smaller than lateral ⬥ Crown is tall relative to width (labially) ⬥ Crown '
+                'is more symmetrical (labially) ⬥ Crown edges are equally angular ⬥ Root is shorter than lateral',
         'nextStep': '2.11L-1',
       },
       {
         'text':
             'Major axis of occlusal edge is not perpendicular to major axis of root',
         'subtext':
-            'Crown is slightly larger than central. Crown is wide relative to height (labially). Crown is more asymmetrical (labially). Distal crown edges flare distally. Root is longer than central',
+            'Crown is slightly larger than central ⬥ Crown is wide relative to height (labially) ⬥ Crown '
+                'is more asymmetrical (labially) ⬥  Distal crown edges flare distally ⬥ Root is '
+                'longer than central',
         'nextStep': '2.11L-2'
       },
     ],
@@ -385,13 +418,15 @@ final List<DecisionStep> steps = [
       {
         'text': 'Large, wide, spatulate crown',
         'subtext':
-            'Crown is wide relative to its height (labially). Crown is more symmetrical (labially). Root is shorter and stouter. Has a large, rectangular IPCF',
+            'Crown is wide relative to its height (labially) ⬥ Crown is more symmetrical (labially) ⬥ Root '
+                'is shorter and stouter ⬥ Has a large, rectangular IPCF',
         'nextStep': '2.11DU-1',
       },
       {
         'text': 'Not immediately clear',
         'subtext':
-            ' Crown is tall relative to its width (labially). Crown is more asymmetrical (labially). Root is longer and more slender. Has a square, concave IPCF',
+            'Crown is tall relative to its width (labially) ⬥ Crown is more asymmetrical (labially) ⬥ Root '
+                'is longer and more slender ⬥ Has a square, concave IPCF',
         'nextStep': '2.11DU-2',
       },
     ],
@@ -434,14 +469,16 @@ final List<DecisionStep> steps = [
       {
         'text': 'Not immediately clear',
         'subtext':
-            'Crown is slightly smaller than lateral. Crown is tall relative to width (labially). Crown is more symmetrical (labially). Crown edges are equally angular. Root is shorter than lateral',
+            'Crown is slightly smaller than lateral ⬥ Crown is tall relative to width (labially) ⬥ Crown '
+                'is more symmetrical (labially) ⬥ Crown edges are equally angular ⬥ Root is shorter than lateral',
         'nextStep': '2.11DL-1',
       },
       {
         'text':
             'Major axis of occlusal edge is not perpendicular to major axis of root',
         'subtext':
-            'Crown is slightly larger than central. Crown is wide relative to height (labially). Crown is more asymmetrical (labially). Distal crown edges flare distally. Root is longer than central',
+            'Crown is slightly larger than central ⬥ Crown is wide relative to height (labially) ⬥ Crown '
+                'is more asymmetrical (labially) ⬥ Distal crown edges flare distally ⬥ Root is longer than central',
         'nextStep': '2.11DL-2'
       },
     ],
@@ -535,14 +572,18 @@ final List<DecisionStep> steps = [
     choices: [
       {
         'text': 'Root is bifurcated or bilobate or Has a curved, cupped IPCF',
-        'subtext':
-            ' Lingual cusp is small (relative to buccal cusp). Less symmetrical, more triangular (occlusally). Mesial edge of crown indented, concave. Crown bulges more mesiobuccally at CEJ. Developmental groove through mesial marginal ridge. Mesial IPCF is tall, curvilinear, and convex.',
+        'subtext': 'Lingual cusp is small (relative to buccal cusp) ⬥ Less symmetrical, more triangular '
+            '(occlusally) ⬥ Mesial edge of crown indented, concave. Crown bulges more mesiobuccally '
+            'at CEJ. Developmental groove through mesial marginal ridge. Mesial IPCF is tall, '
+            'curvilinear, and convex',
         'nextStep': '2.11UP3',
       },
       {
         'text': 'Not immediately clear',
-        'subtext':
-            'Lingual & buccal cusps are similar in size (occlusally). More symmetrical, rounder/more oval (occlusally). Mesial edge of crown straight, not indented. Crown more vertical mesiobuccally at CEJ. No developmental groove. Mesial IPCF is broad and more symmetrical',
+        'subtext': 'Lingual & buccal cusps are similar in size (occlusally) ⬥ More symmetrical, '
+            'rounder/more oval (occlusally) ⬥ Mesial edge of crown straight, not indented ⬥ Crown '
+            'more vertical mesiobuccally at CEJ ⬥ No developmental groove ⬥ Mesial IPCF is '
+            'broad and more symmetrical',
         'nextStep': '2.11UP4',
       },
     ],
@@ -584,14 +625,18 @@ final List<DecisionStep> steps = [
     choices: [
       {
         'text': 'Not immediately clear',
-        'subtext':
-            'Lingual cusp is small (relative to buccal cusp). Buccal cusp is more pointed. Mesial fovea is placed very near mesial edge. Crown less symmetrical, more triangular (occlusally). Mesiolingual groove through mesial marginal ridge. Mesial IPCF is tall, curvilinear, and convex',
+        'subtext': 'Lingual cusp is small (relative to buccal cusp) ⬥ Buccal cusp is more pointed ⬥ Mesial '
+            'fovea is placed very near mesial edge ⬥ Crown less symmetrical, more triangular '
+            '(occlusally) ⬥ Mesiolingual groove through mesial marginal ridge ⬥ Mesial IPCF is '
+            'tall, curvilinear, and convex',
         'nextStep': '2.11LP3',
       },
       {
         'text': 'Not immediately clear',
         'subtext':
-            'Lingual & buccal cusps are closer to same size. Buccal cusp is less pointed. Mesial fovea is placed more distally. Crown more symmetrical, rounder (occlusally). No mesiolingual groove. Mesial IPCF is broad and more symmetrical',
+            'Lingual & buccal cusps are closer to same size ⬥ Buccal cusp is less pointed ⬥ Mesial '
+                'fovea is placed more distally ⬥ Crown more symmetrical, rounder (occlusally) ⬥ No '
+                'mesiolingual groove ⬥ Mesial IPCF is broad and more symmetrical',
         'nextStep': '2.11LP4',
       },
     ],
@@ -635,13 +680,15 @@ final List<DecisionStep> steps = [
         'text':
             'Co-occurence of partially resorbed roots and crown with evidence of wear (both must be present)',
         'subtext':
-            ' Enamel is thinner, softer, and darker. Crown is more bulbous; enamel bulges past CEJ. Roots are thinner and shorter. Multiple roots are more divergent',
+            'Enamel is thinner, softer, and darker ⬥ Crown is more bulbous; enamel bulges past CEJ ⬥ Roots '
+                'are thinner and shorter ⬥ Multiple roots are more divergent',
         'nextStep': '2.10D'
       },
       {
         'text': 'Not immediately clear',
         'subtext':
-            'Enamel is thicker, harder, and whiter. Crown is more vertical; bulges less. Roots are longer and stouter. Multiple roots diverge less',
+            'Enamel is thicker, harder, and whiter ⬥ Crown is more vertical; bulges less ⬥ Roots are '
+                'longer and stouter ⬥ Multiple roots diverge less',
         'nextStep': '2.10P',
       },
     ],
@@ -657,14 +704,17 @@ final List<DecisionStep> steps = [
     choices: [
       {
         'text': 'Tooth has three roots (two parallel and one at 90º to them)',
-        'subtext':
-            'Crown outline is rhomboidal. Usually 3 or 4 cusps. Cusps are asymmetrical (buccal vs. lingual). Usually 3 roots, although sometimes one or more of these roots will split into 2 half-roots. One root is set at 90 º relative to others',
+        'subtext': 'Crown outline is rhomboidal ⬥ Usually 3 or 4 cusps ⬥ Cusps are asymmetrical '
+            '(buccal vs. lingual) ⬥ Usually 3 roots, although sometimes one or more of these '
+            'roots will split into 2 half-roots ⬥ One root is set at 90 º relative to others',
         'nextStep': '2.13PU'
       },
       {
         'text': 'Tooth has two parallel roots and at least three cusps',
         'subtext':
-            'Crown outline is square, rectangular, or oblong. Usually 4 or 5 cusps. Cusps are symmetrical (buccal vs. lingual). Usually 2 parallel roots, but sometimes one of these roots splits into 2 half-roots.',
+            'Crown outline is square, rectangular, or oblong ⬥ Usually 4 or 5 cusps ⬥ Cusps '
+                'are symmetrical (buccal vs. lingual) ⬥ Usually 2 parallel roots, but sometimes '
+                'one of these roots splits into 2 half-roots',
         'nextStep': '2.13PL'
       },
     ],
@@ -681,19 +731,22 @@ final List<DecisionStep> steps = [
       {
         'text': 'Carabelli’s trait is present',
         'subtext':
-            'Four clearly differentiated cusps. Crown is large and rhomboid/square. Roots are widely divergent. IPCFs: one rectangular, one square.',
+            'Four clearly differentiated cusps ⬥ Crown is large and rhomboid/square ⬥ Roots are '
+                'widely divergent ⬥ IPCFs: one rectangular, one square',
         'nextStep': '2.13PU1',
       },
       {
         'text': 'Not immediately clear',
         'subtext':
-            'Cusps intermediate in form. Roots intermediate in form. IPCFs: two rectangular.',
+            'Cusps intermediate in form ⬥ Roots intermediate in form ⬥ IPCFs: two rectangular',
         'nextStep': '2.13PU2',
       },
       {
         'text': 'Three roots fused into single functional root',
         'subtext':
-            'Three cusps, not well differentiated. Crown is mesiodistally compressed, round. Roots either partially fused or closely approximated. IPCFs: only one; rectangular.',
+            'Three cusps, not well differentiated ⬥ Crown is mesiodistally compressed, '
+                'round ⬥ Roots either partially fused or closely approximated ⬥ IPCFs: only '
+                'one; rectangular',
         'nextStep': '2.13PU3',
       },
     ],
@@ -749,19 +802,22 @@ final List<DecisionStep> steps = [
       {
         'text': 'Protostylid effects are present',
         'subtext':
-            'Five clearly differentiated cusps. Crown is large and rectangular. Roots are widely divergent. IPCFs: one rectangular, one square.',
+            'Five clearly differentiated cusps ⬥ Crown is large and rectangular ⬥ Roots are '
+                'widely divergent ⬥ IPCFs: one rectangular, one square',
         'nextStep': '2.13PL1',
       },
       {
         'text': 'Not immediately clear',
         'subtext':
-            'Usually four clearly differentiated cusps. Crown is rectangular or square. Roots intermediate in form. IPCFs: two rectangular.',
+            'Usually four clearly differentiated cusps ⬥ Crown is rectangular or square ⬥ Roots '
+                'intermediate in form ⬥ IPCFs: two rectangular',
         'nextStep': '2.13PL2',
       },
       {
         'text': 'Roots fused into single functional root',
         'subtext':
-            'Cusps vary from three to five. Crown is rounded triangle to square, irregular. Roots either partially fused or closely approximated. IPCFs: only one; rectangular.',
+            'Cusps vary from three to five ⬥ Crown is rounded triangle to square, irregular ⬥ Roots '
+                'either partially fused or closely approximated ⬥ IPCFs: only one; rectangular',
         'nextStep': '2.13PL3',
       },
     ],
@@ -816,14 +872,17 @@ final List<DecisionStep> steps = [
     choices: [
       {
         'text': 'Tooth has three roots (two parallel and one at 90º to them)',
-        'subtext':
-            'Crown outline is rhomboidal. Usually 3 or 4 cusps. Cusps are asymmetrical (buccal vs. lingual). Usually 3 roots, although sometimes one or more of these roots will split into 2 half-roots. One root is set at 90 º relative to others',
+        'subtext': 'Crown outline is rhomboidal ⬥ Usually 3 or 4 cusps ⬥ Cusps are asymmetrical (buccal '
+            'vs. lingual) ⬥ Usually 3 roots, although sometimes one or more of these roots will '
+            'split into 2 half-roots ⬥ One root is set at 90 º relative to others',
         'nextStep': '2.14DU'
       },
       {
         'text': 'Tooth has two parallel roots and at least three cusps',
         'subtext':
-            'Crown outline is square, rectangular, or oblong. Usually 4 or 5 cusps. Cusps are symmetrical (buccal vs. lingual). Usually 2 parallel roots, but sometimes one of these roots splits into 2 half-roots.',
+            'Crown outline is square, rectangular, or oblong ⬥ Usually 4 or 5 cusps ⬥ Cusps are '
+                'symmetrical (buccal vs. lingual) ⬥ Usually 2 parallel roots, but sometimes one of '
+                'these roots splits into 2 half-roots',
         'nextStep': '2.14DL'
       },
     ],
@@ -840,13 +899,15 @@ final List<DecisionStep> steps = [
       {
         'text': 'Crown resembles a premolar',
         'subtext':
-            'Crown is oval (B/L elongated, M/D short). Central fissure separates cusps into buccal and lingual ridges. May have 2, 3, or 4 cusps (not including buccal "shoulders").',
+            'Crown is oval (B/L elongated, M/D short) ⬥ Central fissure separates cusps into '
+                'buccal and lingual ridges ⬥ May have 2, 3, or 4 cusps (not including buccal "shoulders")',
         'nextStep': '2.14DU1',
       },
       {
         'text': 'Crown resembles a molar',
         'subtext':
-            'Crown is rhomboidal with subequal M/D and B/L diameters. Oblique ridge creates a distinct distal fossa. May have 4 or 5 cusps.',
+            'Crown is rhomboidal with subequal M/D and B/L diameters ⬥ Oblique ridge creates a distinct '
+                'distal fossa ⬥ May have 4 or 5 cusps',
         'nextStep': '2.14DU2',
       },
     ],
@@ -889,13 +950,15 @@ final List<DecisionStep> steps = [
       {
         'text': 'Crown resembles a premolar or looks like no permanent tooth',
         'subtext':
-            'Crown is asymmetrical with dominant buccal cusp. Crown has a trapezoidal outline. Central ridge creates smaller mesial and larger distal fossae.',
+            'Crown is asymmetrical with dominant buccal cusp ⬥ Crown has a trapezoidal '
+                'outline ⬥ Central ridge creates smaller mesial and larger distal fossae',
         'nextStep': '2.14DL1',
       },
       {
         'text': 'Crown resembles a molar',
         'subtext':
-            'Crown is symmetrical. Crown has a square or rectangular outline. Has 4 or 5 distinct cusps',
+            'Crown is symmetrical ⬥ Crown has a square or rectangular outline ⬥ Has 4 or '
+                '5 distinct cusps',
         'nextStep': '2.14DL2',
       },
     ],

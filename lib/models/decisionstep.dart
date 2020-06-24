@@ -6,6 +6,7 @@ class DecisionStep {
       this.stepName,
       this.stepNum,
       this.stepMax,
+      this.stepStatus,
       this.choices,
       this.toothForm = '',
       this.toothType = '',
@@ -19,6 +20,7 @@ class DecisionStep {
   final String stepName;
   final int stepNum;
   final int stepMax;
+  final String stepStatus;
   final String type; // question or result
   // for question
   final List<Map<String, String>> choices;

@@ -44,6 +44,12 @@ class _Screen22State extends State<Screen22> {
     return tmp.stepMax;
   }
 
+  String getCurrentStepStatus(int index) {
+    String id = _historySteps[index];
+    var tmp = steps.firstWhere((i) => i.id == id);
+    return tmp.stepStatus;
+  }
+
   DecisionStep getCurrentStep(int index) {
     String id = _historySteps[index];
     DecisionStep tmp = steps.firstWhere((i) => i.id == id);
@@ -158,6 +164,7 @@ class _Screen22State extends State<Screen22> {
                 stepName: getCurrentStepName(_currentStep),
                 stepNum: getCurrentStepNum(_currentStep),
                 stepMax: getCurrentStepMax(_currentStep),
+                stepStatus: getCurrentStepStatus(_currentStep),
                 choiceList: createChoiceList(_currentStep),
                 onPressBack: _currentStep > 0
                     ? () {
@@ -205,6 +212,7 @@ class Decision extends StatefulWidget {
     this.stepName,
     this.stepNum,
     this.stepMax,
+    this.stepStatus,
     this.choiceList,
     this.onPressBack,
     this.onPressNext,
@@ -215,6 +223,7 @@ class Decision extends StatefulWidget {
   final String stepName;
   final int stepNum;
   final int stepMax;
+  final String stepStatus;
   final List<Widget> choiceList;
   final Function onPressBack;
   final Function onPressNext;
@@ -236,9 +245,11 @@ class _DecisionState extends State<Decision> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
                   child: CurrStepText(
-                      stepName: widget.stepName,
-                      stepNum: widget.stepNum,
-                      stepMax: widget.stepMax),
+                    stepName: widget.stepName,
+                    stepNum: widget.stepNum,
+                    stepMax: widget.stepMax,
+                    stepStatus: widget.stepStatus,
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),

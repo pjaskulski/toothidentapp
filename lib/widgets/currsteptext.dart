@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:intervalprogressbar/intervalprogressbar.dart';
 
 class CurrStepText extends StatelessWidget {
-  const CurrStepText({Key key, this.stepName, this.stepNum, this.stepMax})
+  const CurrStepText(
+      {Key key, this.stepName, this.stepNum, this.stepMax, this.stepStatus})
       : super(key: key);
 
   final String stepName;
   final int stepNum;
   final int stepMax;
+  final String stepStatus;
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +18,7 @@ class CurrStepText extends StatelessWidget {
         children: <Widget>[
           SizedBox(height: 10.0),
           Container(
-            //width: 300.0,
-            height: 60.0,
+            height: 75.0,
             padding:
                 const EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
             decoration: BoxDecoration(
@@ -69,6 +70,28 @@ class CurrStepText extends StatelessWidget {
                     intervalHighlightColor: Colors.transparent,
                     reverse: false,
                     radius: 15),
+                SizedBox(height: 5.0),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Status: ',
+                      style: TextStyle(
+                        fontSize: 12.0,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black,
+                      ),
+                    ),
+                    Text(
+                      '$stepStatus',
+                      style: TextStyle(
+                        fontSize: 12.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                )
               ],
             ),
           ),

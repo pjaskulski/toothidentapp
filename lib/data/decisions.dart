@@ -8,6 +8,7 @@ final List<DecisionStep> steps = [
       stepName: 'Form',
       stepNum: 1,
       stepMax: 6,
+      stepStatus: 'Unknown tooth',
       choices: [
         {
           'text':
@@ -37,6 +38,7 @@ final List<DecisionStep> steps = [
     stepName: 'Type',
     stepNum: 2,
     stepMax: 6,
+    stepStatus: 'Incisiform/Caniniform',
     choices: [
       {
         'text':
@@ -61,6 +63,7 @@ final List<DecisionStep> steps = [
     stepName: '',
     stepNum: 3,
     stepMax: 6,
+    stepStatus: 'Caniniform',
     choices: [
       {
         'text': 'Has a single large cusp (lingual relief is OK)',
@@ -84,6 +87,7 @@ final List<DecisionStep> steps = [
     stepName: 'Type',
     stepNum: 2,
     stepMax: 6,
+    stepStatus: 'Molariform',
     choices: [
       {
         'text': 'Tooth has a single, unfused root',
@@ -106,6 +110,7 @@ final List<DecisionStep> steps = [
     stepName: 'Dentition',
     stepNum: 3,
     stepMax: 6,
+    stepStatus: 'Incisor',
     choices: [
       {
         'text':
@@ -129,6 +134,7 @@ final List<DecisionStep> steps = [
     stepName: 'Arcade',
     stepNum: 4,
     stepMax: 6,
+    stepStatus: 'Incisor -> Permanent',
     choices: [
       {
         'text':
@@ -153,6 +159,7 @@ final List<DecisionStep> steps = [
     stepName: 'Arcade',
     stepNum: 4,
     stepMax: 6,
+    stepStatus: 'Incisor -> Deciduous',
     choices: [
       {
         'text':
@@ -177,6 +184,7 @@ final List<DecisionStep> steps = [
     stepName: 'Dentition',
     stepNum: 4,
     stepMax: 6,
+    stepStatus: 'Canine',
     choices: [
       {
         'text':
@@ -200,6 +208,7 @@ final List<DecisionStep> steps = [
     stepName: 'Arcade',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Canine -> Permanent',
     choices: [
       {
         'text': 'Crown bulges beyond both mesial and distal root margins',
@@ -223,6 +232,7 @@ final List<DecisionStep> steps = [
     stepName: 'Arcade',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Canine -> Deciduous',
     choices: [
       {
         'text': 'Crown bulges beyond both mesial and distal root margins',
@@ -246,6 +256,7 @@ final List<DecisionStep> steps = [
     stepName: 'Arcade',
     stepNum: 4,
     stepMax: 6,
+    stepStatus: 'Premolar',
     choices: [
       {
         'text':
@@ -270,6 +281,7 @@ final List<DecisionStep> steps = [
     stepName: 'Position',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Incisor -> Permanent ->Upper',
     choices: [
       {
         'text': 'Large, wide, spatulate crown',
@@ -292,6 +304,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Incisor -> Permanent -> Upper -> 1',
     choices: [
       {'text': 'Left side', 'nextStep': 'LI1-U'},
       {'text': 'Right side', 'nextStep': 'RI1-U'},
@@ -304,6 +317,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Incisor -> Permanent -> Upper -> 2',
     choices: [
       {'text': 'Left side', 'nextStep': 'LI2-U'},
       {'text': 'Right side', 'nextStep': 'RI2-U'},
@@ -316,6 +330,7 @@ final List<DecisionStep> steps = [
     stepName: 'Position',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Incisor -> Permanent -> Lower',
     choices: [
       {
         'text': 'Not immediately clear',
@@ -339,6 +354,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Incisor -> Permanent -> Lower -> 1',
     choices: [
       {'text': 'Left side', 'nextStep': 'LI1-L'},
       {'text': 'Right side', 'nextStep': 'RI1-L'},
@@ -351,6 +367,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Incisor -> Permanent -> Lower -> 2',
     choices: [
       {'text': 'Left side', 'nextStep': 'LI2-L'},
       {'text': 'Right side', 'nextStep': 'RI2-L'},
@@ -363,6 +380,7 @@ final List<DecisionStep> steps = [
     stepName: 'Position',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Incisor -> Deciduous -> Upper',
     choices: [
       {
         'text': 'Large, wide, spatulate crown',
@@ -385,6 +403,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Incisor -> Deciduous -> Upper -> 1',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDI1-U'},
       {'text': 'Right side', 'nextStep': 'RDI1-U'},
@@ -397,6 +416,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Incisor -> Deciduous -> Upper -> 2',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDI2-U'},
       {'text': 'Right side', 'nextStep': 'RDI2-U'},
@@ -409,6 +429,7 @@ final List<DecisionStep> steps = [
     stepName: 'Position',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Incisor -> Deciduous -> Lower',
     choices: [
       {
         'text': 'Not immediately clear',
@@ -432,6 +453,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Incisor -> Deciduous -> Lower -> 1',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDI1-L'},
       {'text': 'Right side', 'nextStep': 'RDI1-L'},
@@ -444,6 +466,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Incisor -> Deciduous -> Lower -> 2',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDI2-L'},
       {'text': 'Right side', 'nextStep': 'RDI2-L'},
@@ -456,6 +479,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Canine -> Permanent -> Upper',
     choices: [
       {'text': 'Left side', 'nextStep': 'LC1-U'},
       {'text': 'Right side', 'nextStep': 'RC1-U'},
@@ -468,6 +492,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Canine -> Permanent -> Lower',
     choices: [
       {'text': 'Left side', 'nextStep': 'LC1-L'},
       {'text': 'Right side', 'nextStep': 'RC1-L'},
@@ -480,6 +505,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Canine -> Deciduous -> Upper',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDC1-U'},
       {'text': 'Right side', 'nextStep': 'RDC1-U'},
@@ -492,6 +518,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Canine -> Deciduous -> Lower',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDC1-L'},
       {'text': 'Right side', 'nextStep': 'RDC1-L'},
@@ -504,6 +531,7 @@ final List<DecisionStep> steps = [
     stepName: 'Position',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Premolar -> Upper',
     choices: [
       {
         'text': 'Root is bifurcated or bilobate or Has a curved, cupped IPCF',
@@ -526,6 +554,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Premolar -> Upper -> 3',
     choices: [
       {'text': 'Left side', 'nextStep': 'LP3-U'},
       {'text': 'Right side', 'nextStep': 'RP3-U'},
@@ -538,6 +567,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Premolar -> Upper -> 4',
     choices: [
       {'text': 'Left side', 'nextStep': 'LP4-U'},
       {'text': 'Right side', 'nextStep': 'RP4-U'},
@@ -550,6 +580,7 @@ final List<DecisionStep> steps = [
     stepName: 'Position',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Premolar -> Lower',
     choices: [
       {
         'text': 'Not immediately clear',
@@ -572,6 +603,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Premolar -> Lower -> 3',
     choices: [
       {'text': 'Left side', 'nextStep': 'LP3-L'},
       {'text': 'Right side', 'nextStep': 'RP3-L'},
@@ -584,6 +616,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Premolar -> Lower -> 4',
     choices: [
       {'text': 'Left side', 'nextStep': 'LP4-L'},
       {'text': 'Right side', 'nextStep': 'RP4-L'},
@@ -596,6 +629,7 @@ final List<DecisionStep> steps = [
     stepName: 'Dentition',
     stepNum: 3,
     stepMax: 6,
+    stepStatus: 'Molar',
     choices: [
       {
         'text':
@@ -619,6 +653,7 @@ final List<DecisionStep> steps = [
     stepName: 'Arcade',
     stepNum: 4,
     stepMax: 6,
+    stepStatus: 'Molar -> Permanent',
     choices: [
       {
         'text': 'Tooth has three roots (two parallel and one at 90º to them)',
@@ -641,6 +676,7 @@ final List<DecisionStep> steps = [
     stepName: 'Position',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Molar -> Permanent -> Upper',
     choices: [
       {
         'text': 'Carabelli’s trait is present',
@@ -669,6 +705,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Permanent -> Upper -> 1',
     choices: [
       {'text': 'Left side', 'nextStep': 'LM1-U'},
       {'text': 'Right side', 'nextStep': 'RM1-U'},
@@ -681,6 +718,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Permanent -> Upper -> 2',
     choices: [
       {'text': 'Left side', 'nextStep': 'LM2-U'},
       {'text': 'Right side', 'nextStep': 'RM2-U'},
@@ -693,6 +731,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Permanent -> Upper -> 3',
     choices: [
       {'text': 'Left side', 'nextStep': 'LM3-U'},
       {'text': 'Right side', 'nextStep': 'RM3-U'},
@@ -703,8 +742,9 @@ final List<DecisionStep> steps = [
     type: 'question',
     title: 'First, second, or third molar?',
     stepName: 'Side',
-    stepNum: 6,
+    stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Molar -> Permanent -> Lower',
     choices: [
       {
         'text': 'Protostylid effects are present',
@@ -733,6 +773,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Permanent -> Lower -> 1',
     choices: [
       {'text': 'Left side', 'nextStep': 'LM1-L'},
       {'text': 'Right side', 'nextStep': 'RM1-L'},
@@ -745,6 +786,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Permanent -> Lower -> 2',
     choices: [
       {'text': 'Left side', 'nextStep': 'LM2-L'},
       {'text': 'Right side', 'nextStep': 'RM2-L'},
@@ -757,6 +799,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Permanent -> Lower -> 3',
     choices: [
       {'text': 'Left side', 'nextStep': 'LM3-L'},
       {'text': 'Right side', 'nextStep': 'RM3-L'},
@@ -767,8 +810,9 @@ final List<DecisionStep> steps = [
     type: 'question',
     title: 'Upper or lower molar?',
     stepName: 'Position',
-    stepNum: 5,
+    stepNum: 4,
     stepMax: 6,
+    stepStatus: 'Molar -> Deciduous',
     choices: [
       {
         'text': 'Tooth has three roots (two parallel and one at 90º to them)',
@@ -791,6 +835,7 @@ final List<DecisionStep> steps = [
     stepName: 'Position',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Molar -> Deciduous -> Upper',
     choices: [
       {
         'text': 'Crown resembles a premolar',
@@ -813,6 +858,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Deciduous -> Upper -> 1',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDM1-U'},
       {'text': 'Right side', 'nextStep': 'RDM1-U'},
@@ -825,6 +871,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Deciduous -> Upper -> 2',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDM2-U'},
       {'text': 'Right side', 'nextStep': 'RDM2-U'},
@@ -837,6 +884,7 @@ final List<DecisionStep> steps = [
     stepName: 'Position',
     stepNum: 5,
     stepMax: 6,
+    stepStatus: 'Molar -> Deciduous -> Lower',
     choices: [
       {
         'text': 'Crown resembles a premolar or looks like no permanent tooth',
@@ -859,6 +907,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Deciduous -> Lower -> 1',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDM1-L'},
       {'text': 'Right side', 'nextStep': 'RDM1-L'},
@@ -871,6 +920,7 @@ final List<DecisionStep> steps = [
     stepName: 'Side',
     stepNum: 6,
     stepMax: 6,
+    stepStatus: 'Molar -> Deciduous -> Lower -> 2',
     choices: [
       {'text': 'Left side', 'nextStep': 'LDM2-L'},
       {'text': 'Right side', 'nextStep': 'RDM2-L'},

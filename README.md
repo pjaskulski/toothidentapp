@@ -17,6 +17,11 @@ Screenshots:
 ![Screen](/doc/toothidentapp01.jpg)  ![Screen](/doc/toothidentapp02a.jpg)  ![Screen](/doc/toothidentapp02.jpg) 
 ![Screen](/doc/toothidentapp03.jpg)
 
+Linux screenshots:
+![Screen](/doc/screenshot_linux_01.png)
+![Screen](/doc/screenshot_linux_02.png)
+![Screen](/doc/screenshot_linux_03.png)
+
 Icon: 
 
 ![Screen](/doc/iconapp.png)
